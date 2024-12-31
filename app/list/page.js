@@ -21,6 +21,7 @@ function ListItem(props) {
       <Link prefetch={false} href={"/detail/" + props.id}>
         <h4>{props.title}</h4>
       </Link>
+      <Link href={"/edit/" + props.id}>수정</Link>
       <p>1월 1일</p>
     </div>
   );
