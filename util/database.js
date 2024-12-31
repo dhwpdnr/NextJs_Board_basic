@@ -1,7 +1,7 @@
 import { MongoClient } from "mongodb";
 
 const url =
-  "mongodb+srv://admin:admin1234@forum.aclcd.mongodb.net/?retryWrites=true&w=majority&appName=Forum";
+  "mongodb://admin:admin1234@forum-shard-00-00.aclcd.mongodb.net:27017,forum-shard-00-01.aclcd.mongodb.net:27017,forum-shard-00-02.aclcd.mongodb.net:27017/?ssl=true&replicaSet=atlas-6p7vov-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Forum";
 const options = { useNewUrlParser: true };
 let connectDB;
 
