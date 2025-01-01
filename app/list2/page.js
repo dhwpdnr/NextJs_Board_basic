@@ -1,7 +1,7 @@
 import { connectDB } from "@/util/database";
 import ListItem from "./ListItem";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 20;
 
 export default async function List() {
   let db = (await connectDB).db("forum");
